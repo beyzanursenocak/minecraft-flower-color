@@ -1,0 +1,124 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.left-menu {
+  left: 20px;
+  right: auto;
+}
+
+.season-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.season-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.season-button.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.color-button.active {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.flower-count-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.flower-count-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flower-count-button.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.top-center-overlay {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  text-shadow: none;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 0;
+}
+
+.top-center-overlay h1 {
+  font-size: 4.0rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.top-center-overlay p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: black;
+}
+
+h1, h2 {
+  color: black;
+}
+
+.overlay {
+  position: static;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.instructions {
+  font-size: 0.9em;
+  opacity: 0.8;
+} 
